@@ -1,0 +1,174 @@
+:root {
+    --clr-primary: orangered;
+    --clr-secondary: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    padding: 0 5%;
+}
+
+main {
+    max-width: 1000px;
+    margin: 100px auto 50px;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 27px 20px;
+    color: var(--clr-primary);
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#nav-bar a:hover,
+#nav-bar a:active {
+    color: whitesmoke;
+    background-color: var(--clr-primary);
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#header-img {
+    max-width: 300px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+section.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid var(--clr-primary);
+    height: 35px;
+    width: 300px;
+}
+
+input#submit,
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--clr-secondary);
+    border-radius: 5px;
+    border: 2px solid var(--clr-primary);
+    color: var(--clr-primary);
+    height: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+input#submit:hover,
+button:hover {
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary);
+    cursor: pointer;
+}
+
+section#features,
+section#pricing {
+    display: flex;
+    flex-direction: row;
+}
+
+div.feature,
+div.product {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.fa {
+    font-size: 40px;
+    align-items: center;
+    color: var(--clr-primary);
+}
+
+section#features h3 {
+    color: var(--clr-primary);
+    margin: 20px 0;
+    text-align: center;
+}
+
+section#features p {
+    text-align: center;
+}
+
+section.how-it-works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+    margin: 0 auto 80px;
+}
+
+div.product {
+    border: 1px solid var(--clr-primary);
+    padding-bottom: 10px;
+}
+
+div.level {
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary);
+}
+
+div.product li {
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+}
