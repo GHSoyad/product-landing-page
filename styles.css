@@ -172,3 +172,26 @@ div.product li {
     list-style: none;
     padding: 10px 0;
 }
+
+footer {
+    background-color: whitesmoke;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer li {
+    list-style: none;
+    margin: 15px;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+    font-size: .8em;
+}
