@@ -149,7 +149,7 @@ section.how-it-works {
     align-items: center;
     justify-content: center;
     max-width: 80vw;
-    margin: 0 auto 80px;
+    margin: 0 auto 60px;
 }
 
 div.product {
@@ -192,6 +192,59 @@ footer span {
     display: flex;
     justify-content: center;
     color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: .8em;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    #nav-bar ul {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    a {
+        padding: 10px 15px;
+    }
+
+    main {
+        margin: 110px auto 20px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    section#features,
+    section#pricing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.feature,
+    div.product {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-bar ul {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    section#features h3 {
+        margin: 10px 0;
+    }
 }
