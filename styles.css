@@ -1,6 +1,6 @@
 :root {
     --clr-primary: orangered;
-    --clr-secondary: white;
+    --clr-secondary: whitesmoke;
 }
 
 * {
@@ -17,7 +17,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: whitesmoke;
+    background-color: var(--clr-secondary);
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
@@ -47,7 +47,7 @@ a {
 
 #nav-bar a:hover,
 #nav-bar a:active {
-    color: whitesmoke;
+    color: var(--clr-secondary);
     background-color: var(--clr-primary);
 }
 
@@ -83,6 +83,10 @@ section.hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+span.new-line {
+    font-size: 1em;
 }
 
 input {
@@ -174,7 +178,7 @@ div.product li {
 }
 
 footer {
-    background-color: whitesmoke;
+    background-color: var(--clr-secondary);
 }
 
 footer ul {
@@ -235,16 +239,34 @@ footer span {
 }
 
 @media only screen and (max-width: 600px) {
+    header {
+        padding-bottom: 0;
+    }
+
     #nav-bar ul {
-        margin-top: 15px;
-        margin-left: 0;
+        margin: 6px 0 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #nav-bar ul li {
+        margin: 6px;
     }
 
     a {
-        padding: 10px;
+        padding: 6px 10px;
+    }
+
+    main {
+        margin-top: 130px;
     }
 
     section#features h3 {
         margin: 10px 0;
+    }
+
+    span.new-line {
+        display: block;
+        font-size: 1em;
     }
 }
