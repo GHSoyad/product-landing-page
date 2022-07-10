@@ -59,8 +59,8 @@ a {
     max-width: 300px;
 }
 
-section {
-    margin-bottom: 60px;
+.heading {
+    padding-top: 80px;
 }
 
 h2,
@@ -120,6 +120,8 @@ section#features,
 section#pricing {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.feature,
@@ -153,7 +155,7 @@ section.how-it-works {
     align-items: center;
     justify-content: center;
     max-width: 80vw;
-    margin: 0 auto 60px;
+    margin: 0 auto;
 }
 
 div.product {
@@ -221,10 +223,6 @@ footer span {
         margin: 110px auto 20px;
     }
 
-    section {
-        margin-bottom: 40px;
-    }
-
     section#features,
     section#pricing {
         display: flex;
@@ -244,7 +242,7 @@ footer span {
     }
 
     #nav-bar ul {
-        margin: 6px 0 0 10px;
+        margin: 6px 0 0 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
